@@ -1,8 +1,10 @@
 import { DataSource } from "typeorm";
+import "dotenv/config";
+import "reflect-metadata";
 
 const port = process.env.DB_PORT as number | undefined;
 
-const AppDataSouce = new DataSource({
+export const AppDataSouce = new DataSource({
   type: "postgres",
   host: process.env.DB_HOST,
   port: port,
