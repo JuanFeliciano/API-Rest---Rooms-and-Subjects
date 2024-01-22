@@ -7,4 +7,9 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000
+POST http://localhost:3000/room
+Content-Type: application/json
+
+{
+  "name": "Introdução",
+}

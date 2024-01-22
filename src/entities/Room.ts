@@ -6,7 +6,6 @@ import {
   PrimaryGeneratedColumn,
 } from "typeorm";
 import { Video } from "./Video";
-import { text } from "stream/consumers";
 import { Subject } from "./Subject";
 
 @Entity()
@@ -18,7 +17,7 @@ export class Room {
   name: string;
 
   @Column({ type: "text" })
-  descriptiom: string;
+  description: string;
 
   @OneToMany(() => Video, (video) => video.room)
   videos: Video[];
