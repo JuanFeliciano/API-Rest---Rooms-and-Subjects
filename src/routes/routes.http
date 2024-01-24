@@ -1,3 +1,4 @@
+## Criador de disciplinas
 POST http://localhost:3000/subject
 Content-Type: application/json
 
@@ -7,9 +8,22 @@ Content-Type: application/json
 
 ###
 
+## Criador de aulas para cada disciplina
 POST http://localhost:3000/room
 Content-Type: application/json
 
 {
-  "name": "Introdução",
+  "name": "Operações Básicas",
+  "description": "As Operações Básicas "
+}
+
+###
+
+## Criador de Videos para cada aula
+POST http://localhost:3000/room//create
+Content-Type: application/json
+
+{
+  "title": "Operador de Subtração",
+  "url": "http://youtube.com"
 }
